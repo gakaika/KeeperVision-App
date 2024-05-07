@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">KeeperVision</string>
+
+    <!--
+    Auth0 Related
+    -->
+    <string name="com_auth0_scheme">app</string>
+    <string name="login_scopes">openid profile email</string>
+    <string name="login_audience">https://%1$s/api/v2/</string>
+
+    <!--
+    Server API
+    -->
+    <string name="server_address">REDACTED</string>
+    <string name="predict_route">/api/predict</string>
+    <string name="register_route">/api/register</string>
+    <string name="session_route">/api/session</string>
+    <!--
+    Metrics Page
+    -->
+    <string name="session_summary">Session Summary</string>
+    <string name="directives_issued">Directives Issued</string>
+    <string name="session_analysis">Session Analysis</string>
+    <string name="session_stats">Session Stats</string>
+    <string name="session_images">Session Images</string>
+    <string name="initial_image">Initial Image</string>
+    <string name="final_image">Final Image</string>
+    <!--
+    Other Strings
+    -->
+    <string name="title_login">Login</string>
+    <string name="title_home">Home</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_metrics">Metrics</string>
+    <string name="title_session_expanded">Session Expanded</string>
+    <string name="title_settings">Settings</string>
+    <string name="permissions_button">Request Permissions</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_message">Let\'s start a new training session in Camera!\n\nKeeperVision will issue audio commands to guide you into the best position in real time</string>
+</resources>

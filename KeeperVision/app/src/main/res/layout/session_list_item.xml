@@ -1,0 +1,69 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/green"
+    app:cardCornerRadius="8dp">
+
+    <TextView
+        android:id="@+id/plus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="25sp"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="8dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/soccer_ball"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/card_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/session_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/session_directives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/session_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

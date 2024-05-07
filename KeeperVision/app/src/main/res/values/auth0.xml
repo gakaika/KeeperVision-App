@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    Private auth0 related, remove in production
+-->
+    <string name="com_auth0_domain">REDACTED</string>
+    <string name="com_auth0_client_id">REDACTED</string>
+</resources>

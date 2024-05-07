@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_login_entry">
+
+    <fragment
+        android:id="@+id/navigation_login_entry"
+        android:name="com.keepervision.ui.login_entry.LoginEntryFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/fragment_login_entry" >
+        <action
+            android:id="@+id/action_navigation_login_entry_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.keepervision.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.keepervision.ui.camera.CameraFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/navigation_metrics"
+        android:name="com.keepervision.ui.metrics.MetricsFragment"
+        android:label="@string/title_metrics"
+        tools:layout="@layout/fragment_metrics" />
+
+    <fragment
+        android:id="@+id/navigation_session_expanded_metrics"
+        android:name="com.keepervision.ui.metrics.SessionExpandedFragment"
+        android:label="@string/title_session_expanded"
+        tools:layout="@layout/fragment_session_expanded" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.keepervision.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_login_entry"
+            app:destination="@id/navigation_login_entry"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+</navigation>
